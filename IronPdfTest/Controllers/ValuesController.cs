@@ -22,11 +22,7 @@ namespace IronPdfTest.Controllers
                 MarginTop = 5,
                 MarginBottom = 10,
                 MarginLeft = 5,
-                MarginRight = 5,
-                Header = new HtmlHeaderFooter
-                {
-                    HtmlFragment = "<div style='text-align:right;font-size:10px;'>Payments Report page {page} of {total-pages}. Generated: {date} {time}</div>"
-                }
+                MarginRight = 5
             });
 
             var html = File.ReadAllText($@"{HostingEnvironment.ApplicationPhysicalPath}/sample.html");
